@@ -15,9 +15,8 @@ public class ChallengeImproved {
 
             }
             result = "all " + category + "{" + sb + "}";
-        }
-        else {
-            result= item + " " +category;
+        } else {
+            result = item + " " + category;
         }
 
         return result;
@@ -32,14 +31,14 @@ public class ChallengeImproved {
         String[] veggies = new String[]{"lettuce", "fajita veggies", "all"};
         ArrayList<String> selectedCategories;
         ArrayList<String> burrittoSeries;
-        ArrayList<String> unselectedCategories;
         Map<String, Integer> itemsTracker = new HashMap<>();
         Random rand;
         int itemsInBurritto;
-        for (int i = 1; i <= 25; i++) {
+        StringBuilder sb;
+        double totalPrice = 0.0;
+
+        for (int i = 1; i <= 10; i++) {
             // single burritto processor
-            StringBuilder sb;
-            String formattedPrice;
             selectedCategories = new ArrayList<>();
             rand = new Random();
             sb = new StringBuilder();
@@ -47,6 +46,7 @@ public class ChallengeImproved {
 
             //itemsTracker= new ArrayList<String>();
             itemsInBurritto = 5 + rand.nextInt(5);
+            double pricePerBurritto = (itemsInBurritto * .50) + 3.00;
             String current;
             for (int j = 0; j < itemsInBurritto; j++) {
                 current = categories.get(new Random().nextInt(categories.size()));
@@ -57,10 +57,8 @@ public class ChallengeImproved {
                     j--;
                 }
             }// 1st inner for loop ends here
-            formattedPrice = String.format(" $%.2f", (itemsInBurritto * .50) + 3.00);
             String item = "";
             for (int k = 0; k < selectedCategories.size(); k++) {
-
                 switch (selectedCategories.get(k).toLowerCase()) {
                     case "rice":
                         item = allItems(rice, rice[rand.nextInt(rice.length)], "rice");
@@ -96,43 +94,33 @@ public class ChallengeImproved {
                         break;
                     default:
                 }
-                // Phase 3 tracker part (1)
-//                if (!itemsTracker.containsKey(item) && !item.isEmpty()) {
-//                    System.out.println(item + " first time");
-//                    itemsTracker.put(item, 1);
-//                } else {
-//                    for (String key : itemsTracker.keySet()) {
-//                        int fre = itemsTracker.get(key) + 1;
-//                        itemsTracker.put(item, fre);
-//                        System.out.println(itemsTracker.get(item) + "tracked");
-//                    }
-//                }
-//            }
-                // Phase 3 tracker part (1)
+            }// end of inner loop
+            for (String str : burrittoSeries) {
+                if (!itemsTracker.containsKey(str)) {
+                    itemsTracker.put(str, 1);
+                } else {
+                    itemsTracker.put(str, itemsTracker.get(str) + 1);
 
-                // Phase 3 tracker part (2)
-                int values;
-                //System.out.println("i:" + i);
-//            sb.append("This order has ");
-//            //itemsTracker = new HashMap<>();
-//            for (String key : itemsTracker.keySet()) {
-//                //sb.append(itemsTracker.get(key) +" " + key);
-//                System.out.println("key :" + key + " value:" + itemsTracker.get(key));
-//            }
-            } // end of inner loop choose n elements for a burritto
-            unselectedCategories = new ArrayList<>();
-            for (int n = 0; n < 5; n++) {
-                if (!selectedCategories.contains(categories.get(n))) {
-                    unselectedCategories.add(categories.get(n));
-                    burrittoSeries.add("no " + categories.get(n));
                 }
             }
-            // Adding the price at the end of the list.
-            burrittoSeries.add(formattedPrice);
-            System.out.println("Burritto:" + i + " " + burrittoSeries.toString().replace("[", "").replace("]", ""));
-        }
-            itemsTracker.clear();
+            totalPrice = totalPrice + pricePerBurritto;
+        } // end of loop
+        System.out.println("This order has " + itemsTracker + String.format(" $%.2f", totalPrice));
 
-    }
-}
+        System.out.println("MC Burritto factoring simulation receipt");
+        int lengthOfReceiptContent = itemsTracker.toString().length();
+        for(int indexFrom=0; indexFrom < lengthOfReceiptContent; indexFrom+=50)
+        {
+            int indexTo= indexFrom+50;
+            if(indexTo < lengthOfReceiptContent) {
+                System.out.println(itemsTracker.toString().substring(indexFrom, indexTo));
+            }
+            else// when it is not a multiple of 50 to avoid going out of index
+            {
+                System.out.println(itemsTracker.toString().substring(indexTo-50,lengthOfReceiptContent));
+            }
+            }
+    } // end of main
+}// end of outer loop
+
 

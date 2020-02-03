@@ -108,7 +108,7 @@ public class Main {
             System.out.println("Burritto:" + i + " " + burrittoSeries.toString().replace("[", "").replace("]", ""));
         }
     }
-/*
+/* Mule suggestions
        Map<Integer, String> chip = new HashMap<Integer, String>();
         chip.put(1, "Rice");
         chip.put(2, "Meat");

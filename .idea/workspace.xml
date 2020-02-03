@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c71f5f26-f25b-435a-a038-8a90724b8000" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChallengeTwoChipottleRobot/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChallengeTwoChipottleRobot/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ChallengeTwoChipottleRobot/com/company/ChallengeImproved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChallengeTwoChipottleRobot/com/company/ChallengeImproved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ChallengeImproved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ChallengeImproved.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +60,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.ChallengeImproved">
     <configuration name="ChallengeImproved" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.ChallengeImproved" />
       <module name="ChallengeTwoChipottleRobot" />
@@ -87,8 +86,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ChallengeImproved" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -105,7 +104,7 @@
       <workItem from="1580480729802" duration="23467000" />
       <workItem from="1580562672095" duration="12427000" />
       <workItem from="1580605698460" duration="15260000" />
-      <workItem from="1580651758863" duration="20401000" />
+      <workItem from="1580651758863" duration="29402000" />
     </task>
     <servers />
   </component>
@@ -138,25 +137,25 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="174" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1580593034642" />
-    <state width="981" height="203" key="GridCell.Tab.0.bottom" timestamp="1580688871574">
+    <state width="981" height="203" key="GridCell.Tab.0.bottom" timestamp="1580697858659">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="981" height="203" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1580688871574" />
+    <state width="981" height="203" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1580697858659" />
     <state width="1237" height="49" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580682864821" />
-    <state width="981" height="203" key="GridCell.Tab.0.center" timestamp="1580688871574">
+    <state width="981" height="203" key="GridCell.Tab.0.center" timestamp="1580697858659">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="981" height="203" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1580688871574" />
+    <state width="981" height="203" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1580697858659" />
     <state width="1237" height="49" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1580682864821" />
-    <state width="981" height="203" key="GridCell.Tab.0.left" timestamp="1580688871573">
+    <state width="981" height="203" key="GridCell.Tab.0.left" timestamp="1580697858659">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="981" height="203" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1580688871573" />
+    <state width="981" height="203" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1580697858659" />
     <state width="1237" height="49" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1580682864821" />
-    <state width="981" height="203" key="GridCell.Tab.0.right" timestamp="1580688871574">
+    <state width="981" height="203" key="GridCell.Tab.0.right" timestamp="1580697858659">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="981" height="203" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1580688871574" />
+    <state width="981" height="203" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1580697858659" />
     <state width="1237" height="49" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580682864821" />
     <state x="152" y="0" key="SettingsEditor" timestamp="1580623530996">
       <screen x="0" y="0" width="1280" height="680" />
@@ -171,5 +170,13 @@
       <screen x="0" y="0" width="1024" height="728" />
     </state>
     <state width="602" height="300" key="javadoc.popup/0.0.1024.728@0.0.1024.728" timestamp="1580606806231" />
+    <state x="0" y="0" key="new project wizard" timestamp="1580697489767">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1024.728@0.0.1024.728" timestamp="1580697489767" />
+    <state x="175" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580691085691">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="175" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1024.728@0.0.1024.728" timestamp="1580691085691" />
   </component>
 </project>
